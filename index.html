@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin Dev V</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cdot"></div>
+    <div class="cursor-ring" id="cring"></div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">ADV<em> — </em>Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Say hi</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <!-- floating tags -->
+        <span class="floating-tag">Flutter</span>
+        <span class="floating-tag">ESP32</span>
+        <span class="floating-tag">Laravel</span>
+        <span class="floating-tag">Amateur Radio</span>
+        <span class="floating-tag">Raspberry Pi</span>
+
+        <canvas class="hero-noise" id="noise-canvas"></canvas>
+
+        <div class="hero-inner">
+            <div class="hero-eyebrow">Open to work · Kochi, India</div>
+            <h1>
+                <span class="h1-line"><span>Ashwin</span></span>
+                <span class="h1-line"><span>Dev V.</span></span>
+                <span class="h1-line"><span style="opacity:0.15">Builder.</span></span>
+            </h1>
+            <p class="hero-sub">
+                Software developer + embedded systems enthusiast. I build mobile apps, backend systems,
+                and make hardware talk to software — sometimes with a soldering iron, sometimes with a
+                radio antenna.
+            </p>
+            <div class="hero-cta">
+                <a class="btn btn-fill" href="#projects">Explore work ↓</a>
+                <a class="btn btn-outline" href="https://github.com/Ashwin04912" target="_blank">GitHub ↗</a>
+                <a class="btn btn-outline" href="https://linkedin.com/in/ashwin-dev-v" target="_blank">LinkedIn ↗</a>
+            </div>
+        </div>
+
+        <div class="scroll-hint">Scroll to explore</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track" id="mtrack"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section">
+            <div class="about-ticker">Available for opportunities</div>
+            <div class="about-layout reveal">
+                <div class="about-copy">
+                    <div class="sec-label">About me</div>
+                    <h2>Code &<br>current.</h2>
+                    <p>Even in 2026, I still see myself as a <strong>developer at heart</strong> — someone who
+                        constantly learns, builds, experiments, and solves real-world problems through the latest
+                        technology.</p>
+                    <p>My stack lives across two worlds: <strong>Flutter + Laravel</strong> on the software side, and
+                        <strong>ESP32, PIC, Raspberry Pi</strong> on the hardware side. I hold an Amateur Radio Operator
+                        Certificate (Restricted Grade) and genuinely enjoy thinking in signals.
+                    </p>
+                    <p>Fresh B.Tech graduate, three internships deep, six-plus projects shipped — and still learning
+                        something new every week. That part will probably never stop.</p>
+                    <div class="stats-cluster">
+                        <div class="stat-box">
+                            <div class="stat-big">3<span class="accent">+</span></div>
+                            <div class="stat-lbl">Internships</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-big">6<span class="accent">+</span></div>
+                            <div class="stat-lbl">Projects Built</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-big">500<span class="accent">+</span></div>
+                            <div class="stat-lbl">Connections</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-big">94<span class="accent">%</span></div>
+                            <div class="stat-lbl">Higher Secondary</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-block">
+                    <div class="sec-label" style="margin-top:0.5rem">Skills</div>
+                    <div class="skill-row">
+                        <div class="skill-row-label">Mobile & UI</div>
+                        <div class="chips">
+                            <span class="chip mob">Flutter</span>
+                            <span class="chip mob">Dart</span>
+                            <span class="chip mob">BLoC</span>
+                            <span class="chip mob">GetX</span>
+                            <span class="chip mob">Firebase</span>
+                            <span class="chip mob">Supabase</span>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-row-label">Backend & DevOps</div>
+                        <div class="chips">
+                            <span class="chip back">Laravel</span>
+                            <span class="chip back">PHP</span>
+                            <span class="chip">MySQL</span>
+                            <span class="chip">Docker</span>
+                            <span class="chip">AWS EC2</span>
+                            <span class="chip">Linux</span>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-row-label">Embedded & Hardware</div>
+                        <div class="chips">
+                            <span class="chip emb">ESP32</span>
+                            <span class="chip emb">Arduino</span>
+                            <span class="chip emb">Raspberry Pi</span>
+                            <span class="chip emb">PIC / STM32</span>
+                            <span class="chip emb">KiCad</span>
+                            <span class="chip">Proteus</span>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-row-label">Languages</div>
+                        <div class="chips">
+                            <span class="chip">Python</span>
+                            <span class="chip">C / C++</span>
+                            <span class="chip">Dart</span>
+                            <span class="chip">PHP</span>
+                            <span class="chip">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section">
+            <div class="sec-label">Experience</div>
+            <h2 class="reveal">Where I've<br>worked.</h2>
+            <div class="xp-grid">
+                <div class="xp-row reveal">
+                    <div class="xp-meta">
+                        <div class="xp-period">Aug 2025 – Feb 2026</div>
+                        <div class="xp-co">KL KONCEPTS LAB MEDIA AND IT PARK PRIVATE LIMITED</div>
+                        <div class="xp-type">Internship · Remote</div>
+                    </div>
+                    <div class="xp-content">
+                        <div class="xp-title">Software Development Engineer</div>
+                        <ul class="xp-bullets">
+                            <li>Built ONDC-compliant e-commerce backend with Laravel — order workflows, async queues,
+                                the whole pipeline.</li>
+                            <li>Developed a PoC HL7 Interface Engine in Python using TCP/IP sockets for real-time
+                                clinical data transmission.</li>
+                        </ul>
+                        <div class="xp-tags">
+                            <span class="chip back">Laravel</span><span class="chip">Python</span><span
+                                class="chip">TCP/IP</span><span class="chip">Socket</span><span
+                                class="chip">HL7</span><span class="chip">ONDC</span><span
+                                class="chip">MySQL</span><span class="chip">REST API</span><span
+                                class="chip">Webhooks</span><span class="chip">Callback</span><span
+                                class="chip">ngrok</span><span class="chip">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp-row reveal">
+                    <div class="xp-meta">
+                        <div class="xp-period">Jun 2024 – Jan 2025</div>
+                        <div class="xp-co">Botz Engineering Pvt Ltd</div>
+                        <div class="xp-type">Internship</div>
+                    </div>
+                    <div class="xp-content">
+                        <div class="xp-title">Assistant Design Engineer</div>
+                        <ul class="xp-bullets">
+                            <li>Bare-metal PIC microcontroller programming in MPLAB IDE.</li>
+                            <li>Proteus simulation → hardware deployment pipeline. Built LED chasers, washing machine
+                                controllers, and Raspberry Pi projects.</li>
+                        </ul>
+                        <div class="xp-tags">
+                            <span class="chip emb">PIC</span><span class="chip emb">Raspberry Pi</span><span
+                                class="chip">Proteus</span><span class="chip">MPLAB IDE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp-row reveal">
+                    <div class="xp-meta">
+                        <div class="xp-period">Jul 2024 – Apr 2025</div>
+                        <div class="xp-co">Handstrom Solutions LLP</div>
+                        <div class="xp-type">Internship · Remote</div>
+                    </div>
+                    <div class="xp-content">
+                        <div class="xp-title">Software Developer</div>
+                        <ul class="xp-bullets">
+                            <li>ERP system development using Laravel, handling enterprise workflow modules and business
+                                logic.</li>
+                            <li>Built frontend interfaces with HTML5, Bootstrap, and JavaScript integrated with backend
+                                APIs.</li>
+                            <li>Managed codebase and collaboration workflows using Git and GitHub.</li>
+                        </ul>
+                        <div class="xp-tags">
+                            <span class="chip back">Laravel</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">HTML5</span>
+                            <span class="chip">Bootstrap</span>
+                            <span class="chip">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp-row reveal">
+                    <div class="xp-meta">
+                        <div class="xp-period">Mar 2024 – Dec 2024</div>
+                        <div class="xp-co">ZARKKA FASHION PRIVATE LIMITED</div>
+                        <div class="xp-type">Internship · Hybrid</div>
+                    </div>
+                    <div class="xp-content">
+                        <div class="xp-title">Flutter Developer</div>
+                        <ul class="xp-bullets">
+                            <li>Full e-commerce app: auth flows, REST API integration, BLoC state management.</li>
+                            <li>Collaborated closely with backend and UI/UX teams for production delivery.</li>
+                        </ul>
+                        <div class="xp-tags">
+                            <span class="chip mob">Flutter</span><span class="chip mob">BLoC</span><span
+                                class="chip">REST API</span><span class="chip">Firebase</span><span
+                                class="chip">TDD</span><span class="chip">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section">
+            <div class="sec-label">Projects</div>
+            <h2 class="reveal">Things I've<br>built.</h2>
+            <div class="proj-switcher reveal">
+                <button class="pswitch on" data-filter="all">All</button>
+                <button class="pswitch" data-filter="mobile">Mobile</button>
+                <button class="pswitch" data-filter="embedded">Embedded</button>
+                <button class="pswitch" data-filter="tools">Tools</button>
+            </div>
+            <div class="proj-grid" id="pgrid">
+
+                <div class="proj-card" data-cat="mobile" data-num="01">
+                    <span class="proj-emoji">🛵</span>
+                    <div class="proj-name">Ride Onn</div>
+                    <p class="proj-desc">IoT-enabled ride-sharing app. Flutter + ESP32 talking to each other — real-time
+                        GPS tracking, OTP auth, role-based workflows for riders and admins.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">Flutter</span><span class="ptag">ESP32</span><span
+                                class="ptag">GetX</span><span class="ptag">IoT</span></div>
+                        <a class="proj-link" href="https://github.com/ashwin-dev-v" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="mobile" data-num="02">
+                    <span class="proj-emoji">🏨</span>
+                    <div class="proj-name">GecStay</div>
+                    <p class="proj-desc">Hostel booking app with real-time chat, reviews, and admin onboarding.
+                        Integrated an AI-based admission prediction system via REST APIs using BLoC + Firebase/Supabase.
+                    </p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">Flutter</span><span class="ptag">BLoC</span><span
+                                class="ptag">Firebase</span><span class="ptag">AI</span></div>
+                        <a class="proj-link" href="https://github.com/ashwin-dev-v" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="mobile" data-num="03">
+                    <span class="proj-emoji">🏢</span>
+                    <div class="proj-name">Share a Space</div>
+                    <p class="proj-desc">Coworking space booking and employee management. Shipped to Play Store. Issue
+                        tracking, booking interfaces, reusable UI components.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">Flutter</span><span class="ptag">Play Store</span>
+                        </div>
+                        <a class="proj-link" href="#" target="_blank">Play Store →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="embedded" data-num="04">
+                    <span class="proj-emoji">🌿</span>
+                    <div class="proj-name">Greenhouse Monitor</div>
+                    <p class="proj-desc">Real-time greenhouse monitoring app — live temp, humidity & soil moisture via
+                        WebSocket, actuator status (motor/exhaust), and a plant disease detection list. Guided the Laravel
+                        dev on APIs and WebSocket setup. Shortlisted for YIP district competition.</p>  
+                    <div class="proj-foot">
+                        <div class="proj-tags2">
+                            <span class="ptag">Raspberry Pi 5</span>
+                            <span class="ptag">Python</span>
+                            <span class="ptag">WebSocket</span>
+                            <span class="ptag">Laravel</span>
+                            <span class="ptag">Real-time</span>
+                            <span class="ptag">YIP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="embedded" data-num="06">
+                    <span class="proj-emoji">📋</span>
+                    <div class="proj-name">RFID Attendance System</div>
+                    <p class="proj-desc">RFID check-in/out using ESP32. Records timestamps, calculates session
+                        durations, transmits to a web server over HTTP.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">ESP32</span><span class="ptag">RFID</span><span
+                                class="ptag">HTTP</span></div>
+                        <a class="proj-link" href="https://github.com/ashwin-dev-v" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="tools" data-num="07">
+                    <span class="proj-emoji">🔵</span>
+                    <div class="proj-name">Clarior — Chrome Extension</div>
+                    <p class="proj-desc">AI-powered Chrome extension that simplifies technical docs. LLM APIs, DOM text
+                        selection, floating tooltips, AI sidebar. Manifest V3, secure API handling.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">Chrome MV3</span><span class="ptag">LLM</span><span
+                                class="ptag">JavaScript</span></div>
+                        <a class="proj-link" href="https://github.com/ashwin-dev-v" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="tools" data-num="08">
+                    <span class="proj-emoji">⛓️</span>
+                    <div class="proj-name">Solana Fedora Automation</div>
+                    <p class="proj-desc">Bash scripts that fully automate Solana CLI + Rust + Anchor CLI installation on
+                        Fedora. PATH setup, dependency management, dev environment documentation.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">Bash</span><span class="ptag">Solana</span><span
+                                class="ptag">Rust</span><span class="ptag">Linux</span></div>
+                        <a class="proj-link" href="https://github.com/ashwin-dev-v" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-cat="tools" data-num="09">
+                    <span class="proj-emoji">📡</span>
+                    <div class="proj-name">Ground Plane Antenna</div>
+                    <p class="proj-desc">Hand-built antenna for RF signal reception. One of those hobby projects that
+                        started as experimentation and turned into actual amateur radio use.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2"><span class="ptag">RF</span><span class="ptag">Antenna</span><span
+                                class="ptag">Amateur Radio</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community">
+        <div class="section">
+            <div class="sec-label">Community</div>
+            <h2 class="reveal">Beyond<br>the screen.</h2>
+            <div class="comm-layout reveal">
+                <div class="orion-big">
+                    <div class="orion-badge">Space & Technology Club · GEC Wayanad</div>
+                    <div class="orion-title">ORION</div>
+                    <div class="orion-role">Founder & Vice President · Mar 2024 – May 2026</div>
+                    <p class="orion-desc">Built and led a student engineering community focused on collaborative
+                        learning, electronics, software development, and technical experimentation. Organized
+                        peer-learning sessions, workshops, and engineering initiatives. 2+ years running.</p>
+                </div>
+                <div class="aside-cards">
+                    <div class="aside-card">
+                        <h4>📻 Amateur Radio</h4>
+                        <p>Licensed Amateur Radio Operator (Restricted Grade). Experiments with RF communication,
+                            antenna design, and wireless protocols.</p>
+                    </div>
+                    <div class="aside-card">
+                        <h4>🎓 Education</h4>
+                        <p>B.Tech Electronics & Communication Engineering<br>Govt Engineering College Wayanad ·
+                            2022–2026<br><br>+2 Mathematics & Computer Science — 94.36% — SRV Higher Secondary,
+                            Ernakulam</p>
+                    </div>
+                    <div class="aside-card">
+                        <h4>🌐 Languages</h4>
+                        <p>Malayalam · English · Tamil · Hindi · Konkani</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-bg-text">LET'S BUILD</div>
+        <div class="contact-inner">
+            <div class="contact-pre">What's next?</div>
+            <h2>Say hello.</h2>
+            <p>Open to full-time roles in software development or embedded systems, interesting collaborations, and good
+                conversations. Drop me a line.</p>
+            <div class="contact-links">
+                <a class="btn btn-paper" href="mailto:itsashwindevv@gmail.com">Email me →</a>
+                <a class="btn btn-ghost2" href="https://linkedin.com/in/ashwin-dev-v" target="_blank">LinkedIn ↗</a>
+                <a class="btn btn-ghost2" href="https://github.com/Ashwin04912" target="_blank">GitHub ↗</a>
+                <a class="btn btn-ghost2" href="tel:+918075627926">+91 80756 27926</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Ashwin Dev V — Kochi, Kerala, India</span>
+        <span>itsashwindevv@gmail.com</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
