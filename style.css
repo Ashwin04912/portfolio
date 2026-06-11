@@ -737,17 +737,39 @@ footer {
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+
   nav { padding: 1rem 1.5rem; }
+  nav ul { gap: 1rem; }
   nav ul li:nth-child(n+3) { display: none; }
+
   #hero, .section, #contact { padding-left: 1.5rem; padding-right: 1.5rem; }
-  h1 { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+  
+  h1 { font-size: clamp(2.2rem, 10vw, 4rem); }
+  
+  .scroll-hint { left: 1.5rem; }
+
   .about-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .comm-layout { grid-template-columns: 1fr; }
+  
   .xp-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .xp-row::before { left: -1.5rem; right: -1.5rem; }
+
+  .proj-grid { grid-template-columns: 1fr; }
+
   .floating-tag { display: none; }
-  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  footer { padding: 1.5rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
+@media (max-width: 480px) {
+  .stats-cluster { grid-template-columns: 1fr; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
