@@ -577,6 +577,50 @@ h2 {
 }
 .hidden { display: none !important; }
 
+/* ─── FEATURED/KEY PROJECT CARD ─── */
+.proj-card.featured {
+  grid-column: span 2;
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.proj-card.featured::after {
+  color: var(--paper);
+  opacity: 0.06;
+}
+.proj-card.featured .proj-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+.proj-card.featured .ptag {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--paper2);
+}
+.proj-card.featured .proj-link {
+  color: var(--accent);
+}
+.proj-card.featured .proj-link:hover {
+  border-bottom-color: var(--accent);
+}
+.proj-card.featured:hover {
+  border-color: var(--accent);
+  box-shadow: 6px 6px 0 var(--accent);
+}
+.proj-badge-key {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+
 /* ─── COMMUNITY ─── */
 #community { background: var(--paper2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
@@ -759,6 +803,7 @@ footer {
   .xp-row::before { left: -1.5rem; right: -1.5rem; }
 
   .proj-grid { grid-template-columns: 1fr; }
+  .proj-card.featured { grid-column: span 1; }
 
   .floating-tag { display: none; }
   footer { padding: 1.5rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }

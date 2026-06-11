@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -124,10 +125,10 @@
                         <div class="chips">
                             <span class="chip back">Laravel</span>
                             <span class="chip back">PHP</span>
-                            <span class="chip">MySQL</span>
-                            <span class="chip">Docker</span>
-                            <span class="chip">AWS EC2</span>
-                            <span class="chip">Linux</span>
+                            <span class="chip back">MySQL</span>
+                            <span class="chip back">Docker</span>
+                            <span class="chip back">AWS EC2</span>
+                            <span class="chip back">Linux</span>
                         </div>
                     </div>
                     <div class="skill-row">
@@ -138,7 +139,7 @@
                             <span class="chip emb">Raspberry Pi</span>
                             <span class="chip emb">PIC / STM32</span>
                             <span class="chip emb">KiCad</span>
-                            <span class="chip">Proteus</span>
+                            <span class="chip emb">Proteus</span>
                         </div>
                     </div>
                     <div class="skill-row">
@@ -149,6 +150,7 @@
                             <span class="chip">Dart</span>
                             <span class="chip">PHP</span>
                             <span class="chip">SQL</span>
+                            <span class="chip">HTML</span>
                         </div>
                     </div>
                 </div>
@@ -177,12 +179,12 @@
                                 clinical data transmission.</li>
                         </ul>
                         <div class="xp-tags">
-                            <span class="chip back">Laravel</span><span class="chip">Python</span><span
-                                class="chip">TCP/IP</span><span class="chip">Socket</span><span
-                                class="chip">HL7</span><span class="chip">ONDC</span><span
-                                class="chip">MySQL</span><span class="chip">REST API</span><span
-                                class="chip">Webhooks</span><span class="chip">Callback</span><span
-                                class="chip">ngrok</span><span class="chip">Git</span>
+                            <span class="chip back">Laravel</span><span class="chip back">Python</span><span
+                                class="chip back">TCP/IP</span><span class="chip back">Socket</span><span
+                                class="chip back">HL7</span><span class="chip back">ONDC</span><span
+                                class="chip back">MySQL</span><span class="chip back">REST API</span><span
+                                class="chip back">Webhooks</span><span class="chip back">Callback</span><span
+                                class="chip back">ngrok</span><span class="chip back">Git</span>
                         </div>
                     </div>
                 </div>
@@ -201,7 +203,7 @@
                         </ul>
                         <div class="xp-tags">
                             <span class="chip emb">PIC</span><span class="chip emb">Raspberry Pi</span><span
-                                class="chip">Proteus</span><span class="chip">MPLAB IDE</span>
+                                class="chip emb">Proteus</span><span class="chip emb">MPLAB IDE</span>
                         </div>
                     </div>
                 </div>
@@ -222,11 +224,11 @@
                         </ul>
                         <div class="xp-tags">
                             <span class="chip back">Laravel</span>
-                            <span class="chip">SQL</span>
-                            <span class="chip">JavaScript</span>
-                            <span class="chip">HTML5</span>
-                            <span class="chip">Bootstrap</span>
-                            <span class="chip">Git</span>
+                            <span class="chip back">SQL</span>
+                            <span class="chip back">JavaScript</span>
+                            <span class="chip back">HTML5</span>
+                            <span class="chip back">Bootstrap</span>
+                            <span class="chip back">Git</span>
                         </div>
                     </div>
                 </div>
@@ -244,8 +246,8 @@
                         </ul>
                         <div class="xp-tags">
                             <span class="chip mob">Flutter</span><span class="chip mob">BLoC</span><span
-                                class="chip">REST API</span><span class="chip">Firebase</span><span
-                                class="chip">TDD</span><span class="chip">Git</span>
+                                class="chip mob">REST API</span><span class="chip mob">Firebase</span><span
+                                class="chip mob">TDD</span><span class="chip mob">Git</span>
                         </div>
                     </div>
                 </div>
@@ -260,11 +262,45 @@
             <h2 class="reveal">Things I've<br>built.</h2>
             <div class="proj-switcher reveal">
                 <button class="pswitch on" data-filter="all">All</button>
-                <button class="pswitch" data-filter="mobile">Mobile</button>
+                <button class="pswitch" data-filter="mobile">Application</button>
                 <button class="pswitch" data-filter="embedded">Embedded</button>
                 <button class="pswitch" data-filter="tools">Tools</button>
             </div>
             <div class="proj-grid" id="pgrid">
+
+                <div class="proj-card featured" data-cat="mobile" data-num="00">
+                    <span class="proj-badge-key">KEY PROJECT</span>
+                    <span class="proj-emoji">🛒</span>
+                    <div class="proj-name">ONDC E-Commerce Engine</div>
+                    <p class="proj-desc">ONDC-compliant retail backend built during my Koncepts Lab internship. Managed complex Beckn protocol JSON schemas — parsing, validating, and mapping deeply nested transaction payloads to relational database schemas and asynchronous callback queues to sync seller network states.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2">
+                            <span class="ptag">Laravel</span>
+                            <span class="ptag">PHP</span>
+                            <span class="ptag">ONDC</span>
+                            <span class="ptag">MySQL</span>
+                            <span class="ptag">Queues</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="proj-card featured" data-cat="mobile" data-num="05">
+                    <span class="proj-badge-key">KEY PROJECT</span>
+                    <span class="proj-emoji">🏥</span>
+                    <div class="proj-name">HL7 Interface Engine PoC</div>
+                    <p class="proj-desc">Proof of Concept HL7 Interface Engine built in Python. Undertook a substantial research phase analyzing healthcare data interoperability standards (HL7 v2.x) to construct custom TCP/IP socket servers that parse, validate, and translate medical and clinical patient telemetry streams in real-time.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2">
+                            <span class="ptag">Python</span>
+                            <span class="ptag">HL7</span>
+                            <span class="ptag">TCP/IP</span>
+                            <span class="ptag">Sockets</span>
+                            <span class="ptag">HealthTech</span>
+                        </div>
+                      
+                    </div>
+                </div>
 
                 <div class="proj-card" data-cat="mobile" data-num="01">
                     <span class="proj-emoji">🛵</span>
@@ -326,6 +362,25 @@
                     </div>
                 </div>
 
+                <div class="proj-card" data-cat="mobile" data-num="04">
+                    <span class="proj-emoji">🌿</span>
+                    <div class="proj-name">Growa</div>
+                    <p class="proj-desc">Real-time greenhouse monitoring app — live temp, humidity & soil moisture via
+                        WebSocket, actuator status (motor/exhaust), and a plant disease detection list. Guided the
+                        Laravel
+                        dev on APIs and WebSocket setup. Shortlisted for YIP district competition.</p>
+                    <div class="proj-foot">
+                        <div class="proj-tags2">
+                            <span class="ptag">Raspberry Pi 5</span>
+                            <span class="ptag">Python</span>
+                            <span class="ptag">WebSocket</span>
+                            <span class="ptag">Flutter</span>
+                            <span class="ptag">Laravel</span>
+                            <span class="ptag">Real-time</span>
+                            <span class="ptag">YIP</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="proj-card" data-cat="embedded" data-num="06">
                     <span class="proj-emoji">📋</span>
                     <div class="proj-name">RFID Attendance System</div>
